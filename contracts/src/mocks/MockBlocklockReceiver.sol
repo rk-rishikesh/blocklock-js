@@ -18,7 +18,7 @@ contract MockBlocklockReceiver is AbstractBlocklockReceiver {
         // create timelock request
         requestId = blocklock.requestBlocklock(decryptionBlockNumber, encryptedData);
         // store Ciphertext
-        encryptedValue = encryptedData
+        encryptedValue = encryptedData;
         return requestId;
     }
 
